@@ -93,11 +93,11 @@ export class ProjectRequestService {
     let base;
 
     if (method === 'post') {
-      base = this.http.post(`0.0.0.0:3000/${type}`, project);
+      base = this.http.post(`/api/${type}`, project);
     } else if (method === 'delete') {
-      base = this.http.delete(`0.0.0.0:3000/${type}`);
+      base = this.http.delete(`/api/${type}`);
     } else {
-      base = this.http.get(`0.0.0.0:3000/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }});
+      base = this.http.get(`/api/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }});
     }
 
     const request = base.pipe(
@@ -115,7 +115,7 @@ export class ProjectRequestService {
 private deleteRequest(method: 'delete', type: 'project', _id : string): Observable<any> {
     let base;
 
-    base = this.http.delete(`0.0.0.0:3000/${type}/?_id=${_id}`);
+    base = this.http.delete(`/api/${type}/?_id=${_id}`);
 
 
     const request = base.pipe(
