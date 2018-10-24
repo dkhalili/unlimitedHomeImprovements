@@ -7,6 +7,7 @@ import { environment } from './environments/environment';
 
 import * as $ from 'jquery';
 
+  enableProdMode();
 
 if (environment.production) {
   enableProdMode();
