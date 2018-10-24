@@ -1,0 +1,452 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-default {
+	background-color: orange;
+	background-image: none;
+	border-radius: 0;
+	border-color:orange;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    font-family: monospace;
+}
+
+
+.logo {
+	width: 13%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: green;
+    background-color: transparent;
+}
+
+
+.btn-default:hover {
+    color: green;
+    /* background-color: #e6e6e6; */
+    border-color: green;
+}
+
+.started button:hover{
+	color:green;
+	border-color:green;
+}
+
+a:focus, a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+
+
+
+.home-header {
+background-image: url(https://www.pymnts.com/wp-content/uploads/2018/05/construction-late-payments.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	height:600px;
+}
+.header-content {
+	padding-top:60px;
+}
+.header-content p, h1{
+	color: white;
+}
+.home-input {
+	width:35%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightgray;
+}
+.home-input form {
+	    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+}
+.input-line {
+	display: flex;
+}
+
+.input-line .form-group {
+	width: 33%;
+
+}
+
+.street-input {
+	width: 50% !important;
+}
+
+.input-renovation {
+	padding-top:15px;
+}
+.input-zip {
+	width:33%;
+	padding-right: 5px;
+}
+
+.input-budget {
+	width:33%;
+	padding-right: 5px;
+}
+
+.input-submit {
+	width:33%;
+	height: 34px;
+	color: white;
+    text-shadow: none;
+	background-color: orange;
+    background-image: none;
+   	margin-left: auto;
+    margin-right: auto;
+}
+.btn-default:focus, .btn-default:hover {
+    text-shadow: none;
+	background-color: orange;
+    background-image: none;
+}
+.submit-line {
+	text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.works-button {
+	padding-top: 50px;
+	    margin-left: auto;
+    margin-right: auto;
+    width: 100px
+}
+.works-button button {
+	    height: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.aboutUs-header {
+	padding-top: 75px;
+	background-image: url(https://www.firstratefieldservices.com/wp-content/uploads/2017/03/white-blueprint-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutUs-header h1 {
+	color: black;
+    margin-top: 0;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+.aboutUs-header .text-header {
+    padding: 25px 75px;
+}
+
+.circles .text-header {
+	    font-size: 25px;
+	    padding-bottom: 30px;
+}
+
+.aboutUs-header .circles{
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.aboutUs-header .circle {
+    height: 150px;
+    background-color: grey;
+    border-radius: 100px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.honest-circle {
+	background-image: url("https://i0.wp.com/www.firmology.com/wp-content/uploads/2014/05/handshake-e1400131432409.jpg");
+	background-size: cover;
+    background-position: center;
+}
+
+.ethical-circle {
+	background-image: url("https://rmi-solutions.com/wp-content/uploads/2016/06/ethical-practices-core-values-431x270.jpeg");
+	background-size: cover;
+    background-position: center;
+}
+
+.licensed-circle {
+	background-image: url("http://www.bcscpa.com/bcs-blog/wp-content/uploads/2016/08/construction-2.jpg");
+	background-size: cover;
+    background-position: center;
+}
+
+
+.quality-circle {
+	background-image: url("http://surplus.lk/media/catalog/product/1/2/12_9.jpg");
+	background-size: cover;
+    background-position: center;
+}
+
+.aboutUs-header .text-quote {
+	padding-top: 25px;
+	padding-bottom:25px;
+}
+
+.quote-first {
+    font-size: 17px;
+    font-style: italic;
+      color: lightslategrey;
+
+}
+
+.quote-name {
+	font-size: 12px;
+}
+.texts {
+	height: 200px;
+}
+
+.text-left {
+	float:left;
+	padding-left:100px;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.text-right {
+	float:right;
+	padding-right:100px;
+	padding-left:50px;
+	text-align: justify;
+}
+ .row {
+ 	margin:0;
+ }
+
+
+
+
+
+
+
+
+.services {
+	padding-top: 75px;
+
+	background-image: url(https://images.pexels.com/photos/163999/pexels-photo-163999.jpeg?cs=srgb&dl=wood-dark-banner-163999.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.services p, h4, li{
+	color:black;
+	font-weight: bold;
+}
+
+.services h4 {
+	font-size: 24px;
+}
+.services-content h1 {
+	color: black;
+    margin-top: 0;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+
+.square {
+	    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+        border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.services .text-header {
+    padding: 25px 75px;
+}
+
+.squares .text-header {
+	    font-size: 25px;
+	    padding-bottom: 30px;
+}
+
+.services .squares{
+	padding-top: 10px;
+	padding-bottom: 65px;
+}
+
+
+.cat-left {
+	float:left;
+padding-left:18%;
+padding-right: 50px;
+text-align: justify;
+
+}
+
+
+.cat-right {
+	float:right;
+	padding-right:18%;
+	padding-left:50px;
+	text-align: justify;
+}
+
+.category-list ul {
+	width: 300px;
+	margin: auto;
+}
+.category-list li {
+    font-size: 18px;
+    padding: 6px;
+
+}
+
+
+
+
+.started {
+	    text-align: center;
+}
+
+.started button {
+    height: 50px;
+    width: 150px;
+    background-color: black ;
+    color: white;
+    margin-top:75px;
+
+    margin-bottom: 75px;
+}
+
+footer {
+	background-color: orange;
+    font-family: monospace;
+
+}
+
+footer .footer-par {
+
+	margin-top:10px;
+}
+
+footer a {
+	color: black;
+}
+
+
+.tymodal {
+	display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.tymodal-content {
+	background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    height: 200px;
+    width: 500px;
+    text-align: center;
+
+}
+
+.tymodal-content h1 {
+	color: black;
+}
+
+.tymodal-close {
+	    margin-top: 20px;
+	    background-color: black;
+    width: 123px;
+    height: 30px;
+    color: white;
+}
+
+
+.profilePage {
+	margin-top:100px;
+}
+
+.userInfo h1 {
+	color: black;
+	font-size:25px;
+}
+
+.projects h1 {
+	color:black;
+	font-size: 25px;
+}
+.projectDetails {
+	border: 1px solid black;
+    margin: 50px auto;
+    padding: 25px 0;
+    width: 75%;
+    background-color: lightgray;
+}
+.showDateDiv {
+	text-align: right;
+    padding-right: 25px;
+}
+
+.projectDelete {
+	margin-left:25px;
+}
+
+.projectDelete button {
+	    background-color: red;
+    color: white;
+    border-color: red;
+}
+.registerNew {
+	    float: right;
+    margin-top: 25px;
+}
+
+
+
+.register {
+	height: 500px;
+	margin-top:50px;
+}
+.loginPage {
+	height:500px;
+	margin-top:50px;
+}
+
+
+
+
+footer hr {
+	border-top: 1px solid black;
+}

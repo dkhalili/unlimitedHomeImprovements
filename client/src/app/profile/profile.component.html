@@ -1,0 +1,102 @@
+<div class="container profilePage">
+  <div class="row">
+    
+
+    <button class="registerNew" routerLink="/register" >Register New User</button>
+
+
+     <div class="userInfo">
+
+
+
+      <h1 class="form-signin-heading">Your profile</h1>
+
+      <div class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-3 control-label">User Name</label>
+          <p class="form-control-static">{{ details?.name }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">User Email</label>
+          <p class="form-control-static">{{ details?.email }}</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+     <div class="projects">
+
+
+
+      <h1 class="form-signin-heading">All Projects</h1>
+
+
+
+
+
+
+
+
+
+
+      <div class="form-horizontal projectDetails" *ngFor="let project of projects?.reverse()">
+
+
+
+<div class="showDateDiv">
+  <p class="">{{ project?.date }}</p>
+</div>
+
+
+
+               <div class="text-center">
+                             
+                  <label class="text-center">What Type of Contractor are you Looking for?</label>
+                  <p class="text-center">{{ project?.projectCategory }}</p>
+
+               </div>
+
+
+               <div class="text-center">
+
+                    <label class="text-center" for="description">Description</label>
+                  <p class="text-center">{{ project?.description }}</p>
+
+              </div>
+
+
+                <div class="text-center">
+                  <label class="text-center" for="email">Email Address</label>
+                  <p class="text-center">{{ project?.email }}</p>
+                </div>
+
+
+                <div class="text-center">
+                  <label class="text-center" for="phoneNumber">Phone Number</label>
+                  <p class="text-center">{{ project?.phoneNumber }}</p>
+
+                </div>
+
+
+                <div class="text-center">
+                  <label class="text-center" for="name">Full Name</label>
+                  <p class="text-center">{{ project?.name }}</p>
+                </div>
+                <div class="text-center">
+                  <label class="text-center" for="Address">Address</label>
+                  <p class="text-center">{{ project?.street }}</p>
+                  <p class="text-center">{{ project?.city }} {{ project?.state }} {{ project?.zip }}</p>
+                </div>
+
+<div class="projectDelete">
+    <button (click)="projectDelete(project?._id)">Delete</button>
+</div>
+
+      </div>
+
+    </div></div>

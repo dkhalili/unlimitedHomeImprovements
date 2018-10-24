@@ -1,0 +1,95 @@
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div id="navbar-main">
+      <ul class="nav navbar-nav">
+        <a href="#"><img class="logo" src="../assets/logo.png"></a>
+        <li><a href="#">Home</a></li>
+        <li><a class="aboutUsLink" routerLink="/">About Us</a></li>
+        <li><a class="servicesLink" routerLink="/">Services</a></li>
+        <li><a class="requestLink" routerLink="/">Request</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="!auth.isLoggedIn()"><a routerLink="/login">Sign in</a></li>
+        <li *ngIf="auth.isLoggedIn()"><a routerLink="/profile">{{ auth.getUserDetails()?.name }}</a></li>
+        <li *ngIf="auth.isLoggedIn()"><a (click)="auth.logout()" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
+
+
+<footer class="page-footer font-small orange pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="row">
+
+
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+
+        <div class="col-md-6 mt-md-0 mt-3 footer-par">
+
+          <h5 class="text-uppercase">Unlimited Home Improvements</h5>
+          <p>Family owned and operated. Unlimited Home Improvements & Landscaping is a New York based construction company. Our friendly team of professionals know what is the best fit for our customers requests.</p>
+
+        </div>
+
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <h5 class="text-uppercase">Navigate</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a class="aboutUsLink" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="servicesLink" href="#">Services</a>
+              </li>
+              <li>
+                <a class="requestLink" href="#">Requests</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <h5 class="text-uppercase">Contact Us</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>Sara Jacobi</p>
+              </li>
+              <li>
+                <p>(123)345-6789</p>
+              </li>
+              <li>
+                <p>Email@email.com</p>
+              </li>
+              <li>
+                <p>123 Street RD</p>
+              </li>
+            </ul>
+
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="">UnlimitedHomeImprovements.com</a>
+    </div>
+
+  </footer>

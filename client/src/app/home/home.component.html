@@ -1,0 +1,436 @@
+
+<div class="tymodal">
+  <div class="tymodal-content">
+  	<h1 class="tymodal-header">Thank You!</h1>
+    <p>A representitive will get back to you within 24 hours.</p>
+    <button class="tymodal-close">Close</button>
+  </div>
+
+</div>
+
+
+<div class="">
+	<div class="home-header">
+		<div class="header-content">
+			<h1 class="text-center">Renovations made simple.</h1>
+			<p class="text-center">We make it easy to renovate homes.</p>
+
+			<div class="home-input">
+						<form id="projectCreate" (submit)="projectCreate()">
+							
+						<div class="form-group input-renovation">
+				     
+	  				          <label for="projectCategory">What Type of Contractor are you Looking for?</label>
+					          <!-- <input type="text" class="form-control" name="projectCategory" placeholder="Search" [(ngModel)]="projectForm.projectCategory"> -->
+
+
+
+					          <input list="categories" class="form-control" name="projectCategory" placeholder="Search" [(ngModel)]="projectForm.projectCategory">
+
+
+								<datalist id="categories">
+								  <option value="Additions & Remodeling">
+								  <option value="Addition to Existing Structure - Build">
+								  <option value="Basement - Remodel">
+								  <option value="Bathroom - Remodel">
+								  <option value="Kitchen - Remodel">
+								  <option value="Major Renovation - Multiple Rooms">
+
+
+								  <option value="Bathrooms">
+								  <option value="Bathroom Remodeling and Design">
+								  <option value="Create a bathroom or substantially alter an old one">
+								  <option value="Bathtub Install or Replace tub / shower combos, freestanding tubs, and whirlpools">
+								  <option value="Shower Install or Replace shower pans, tile, fixtures & doors">
+								  <option value="Walk In Tub - Install or Replace">
+								  <option value="Bathtub Liner or Shower Surround - Install or Replace">
+								  <option value="Acrylic liner installed to fit over existing tub">
+								  <option value="Bathtub Resurfacing">
+								  <option value="Recoats bathtubs, countertops and other fixtures with a finish of any color">
+								  <option value="Bathtub or Other Bath or Kitchen Surface - Resurface or Reface: bathtubs, sinks, toilets & some appliances">
+								  <option value="Sink - Refinish or Reglaze: kitchen and bathroom sinks">
+
+
+								  <option value="Cabinets">
+								  <option value="Install, reface, or refinish: cabinets, closets, furniture, organizers, etc.">
+								  <option value="Cabinets - Installs pre-built, semi-custom or custom cabinets">
+								  <option value="Cabinets - Reface or Replace drawer fronts, doors for updated look">
+								  <option value="Custom Cabinets - Build by skilled woodworker">
+								  <option value="Cabinets - Refinish: Strip & refinish existing wood cabinets">
+								  <option value="Cabinets - Repair:  broken hinges, loose doors, faulty drawers">
+								  <option value="Other Cabinet Projects: Install closets, furniture, organizers, etc.">
+								  <option value="Built-In Bookshelf - Construct by Skilled carpenter">
+								  <option value="Built-In Furniture - Construct by Skilled carpenter">
+								  <option value="Furniture - Build Custom tables, cabinets, sofas, desks, lighting, chairs, etc.">
+								  <option value="Closet - Build a new closet where one did not exist">
+								  <option value="Custom Desk - Build office desks, built-in desks, and more">
+								  <option value="Garage Organizers - Install products, systems and advice for organizing a garage">
+								  <option value="Room Closet Organizers - Includes products, systems and advice for organizing closets & rooms">
+								  <option value="Pre-Made Cabinets - Installation & purchase of pre-made cabinets that are delivered and installed at your location">
+								  <option value="Vanity - Install or Build: Installs pre-built, semi-custom or custom vanities">
+
+
+
+								  <option value="Countertops">
+								  <option value="Install or repair countertops: laminate, stone slab, bathtub or kitchen surface, solid surface, ceramic, porcelain, natural stone, etc.">
+								  <option value="Stone Slab Countertops - Installation & Repair (Granite, Marble, Quartz): Realign, augment or reset solid stone surfaces.">
+								  <option value="Tile Countertops- Ceramic, Porcelain & Stone: Installation & repair of natural stone tile & stone slab countertops, grout maintenance">
+								  <option value="Grout Countertops: Replace or Repair; Restoration & Polishing">
+								  <option value="Stone Countertops Restoration & Polishing: Includes marble tile polishing">
+								  <option value="Tile & Grout Countertops Cleaning">
+								  <option value="Countertop Resurfacing: Recoats bathtubs, countertops and other fixtures with a finish of any color">
+								  <option value="Bathtub or Other Bath or Kitchen Surface - Resurface or Reface :Includes bathtubs, sinks, toilets & some appliances">
+								  <option value="Sink - Refinish or Reglaze: Includes kitchen and bathroom sinks">
+								  <option value="Laminate Countertops - Install and Repair">
+								  <option value="Solid Surface Countertops- Stainless Steel, Wood, Concreteinstallation & repair of stainless steel, wood, & concrete">
+								  <option value="Designer - Bathroom">
+								  <option value="Specialist in bathroom layout & design">
+								  <option value="Faucets, Fixtures & Pipes">
+								  <option value="Repair & replace faucets, fixtures, gas piping, includes plumbing for additions or remodels, etc.">
+								  <option value="Plumbing for a Remodel or Addition - Install
+Typically associated with remodeling or new homes">
+								  <option value="Sink Install or Repair">
+								  <option value="Toilet Install or Repair">
+								  <option value="Bathtub Install or Replace">
+								  <option value="Gas Piping">
+								  <option value="Shower Install or Replace">
+								  <option value="Steam Shower - Install">
+								  <option value="Walk In Tub - Install or Replace">
+								  <option value="Whirlpool Bathtub Install or Replace">
+								  <option value="Glass Blocks - Install">
+								  <option value="Interior Painting or Staining">
+								  <option value="Interior Home or Surfaces - Paint or Stain">
+								  <option value="Interiror painting of whole rooms, hallways, walls, ceilings etc.">
+								  <option value="Kitchen - Paint">
+								  <option value="Painting - Ceiling">
+								  <option value="Painting or Staining - Small Projects">
+								  <option value="Bathtub or Other Bath or Kitchen Surface - Resurface or Reface">
+								  <option value="Deck Staining or Painting">
+								  <option value="Painting or Staining - Doors">
+								  <option value="Painting or Staining - Fireplace">
+								  <option value="Painting or Staining - Paneling">
+								  <option value="Painting or Staining - Siding">
+								  <option value="Painting or Staining - Trim">
+								  <option value="Sink - Refinish or Reglaze">
+								  <option value="Specialty Painting - Faux Finishes">
+								  <option value="Specialty Painting - Mural or Trompe Loeil">
+								  <option value="Specialty Painting - Textures">
+								  <option value="Steam Shower - Install">
+								  <option value="Tile">
+								  <option value="Grout: Replace or Repair">
+								  <option value="Tile: Ceramic and Porcelain - Install">
+								  <option value="Floor Tile & Grout Cleaning">
+								  <option value="Granite Restoration & Polishing">
+								  <option value="Marble Restoration & Polishing">
+								  <option value="Stone Restoration & Polishing">
+								  <option value="Tile & Grout Cleaning">
+								  <option value="Tile: Natural Stone (Granite, Marble, Slate, Quartz, etc) - Install">
+								  <option value="Stained or Specialty Glass - Install or Replace">
+								  <option value="Window - Repair">
+								  <option value="Windows - New">
+								  <option value="Egress Window - Install">
+								  <option value="Hardware, Latches & Tracks (Window) - Repair or Replace">
+								  <option value="Stained or Specialty Glass - Repair">
+								  <option value="Storm Windows - Install or Replace">
+
+
+
+								  <option value="Electrical">
+								  <option value="Electrical Switches, Outlets & Fixtures - Install or Repair">
+								  <option value="Electrical for Home Addition or Remodel - Install">
+								  <option value="Light Fixture - Install">
+								  <option value="Designer - Interior Lighting Plan">
+								  <option value="Electric Vehicle Charging Station Installation">
+								  <option value="Electrical Wiring or Panel Upgrade">
+								  <option value="Home Automation System - Install or Service">
+
+
+
+								  <option value="Flooring">
+								  <option value="Wood Flooring - Install or Completely Replace">
+								  <option value="Wood Flooring - Refinish">
+								  <option value="Carpet - Install">
+								  <option value="Laminate Wood or Stone Flooring - Install">
+								  <option value="Vinyl or Linoleum Sheet Flooring or Tiles - Install">
+
+
+								  <option value="Glass & Mirrors">
+								  <option value="Glass Shower Door or Enclosure - Install">
+								  <option value="Mirrors - Install or Replace">
+								  <option value="Window - Repair">
+								  <option value="Glass Blocks - Install">
+								  <option value="Glass Shower Door or Enclosure - Repair">
+								  <option value="Mirrors - Repair or Resilver">
+								  <option value="Stained or Specialty Glass - Install or Replace">
+								  <option value="Stained or Specialty Glass - Repair">
+
+
+
+								  <option value="Hot Tubs & Spas">
+								  <option value="Hot Tub or Spa - Install or Replace">
+								  <option value="Hot Tub or Spa - Repair or Service">
+
+								  <option value="Painting & Staining">
+
+
+								  <option value="Plumbing">
+								  <option value="Drain Clearing">
+								  <option value="Clean drain clog, blockage, sewer main">
+								  <option value="Drain Clog or Blockage - Clear">
+								  <option value="Drain Line Breakage - Camera Locate">
+								  <option value="Sewer Main - Clear">
+								  <option value="Faucets, Fixtures and Pipes - Repair or Replace">
+								  <option value="Plumbing for a Remodel or Addition - Install">
+								  <option value="Boiler or Radiator Heating System - Install or Replace">
+								  <option value="Gas Piping">
+								  <option value="Boiler or Radiator Heating System - Repair or Service">
+								  <option value="Radiant Floor Heating System - Install or repair">
+								  <option value="Well Pump - Repair or Service">
+								  <option value="Sump Pump - Repair or Replace">
+								  <option value="Sump Pump or Interior Foundation Drains - Install">
+								  <option value="Septic Systems, Sewers & Water Mains">
+								  <option value="Septic System - Install or Replace">
+								  <option value="Septic Tank - Clean or Pump Out">
+								  <option value="Lawn and Garden Sprinkler System">
+								  <option value="Outdoor Mist Cooling System">
+								  <option value="Tankless Water Heater">
+								  <option value="Water Heater - Install or Replace">
+								  <option value="Solar Water Heater System - Install or Repair">
+								  <option value="Water Heater - Repair or Service">
+								  <option value="Water Treatment & Purification System - Install or Repair">
+								  <option value="Carpentry Framing - Install">
+								  <option value="Ceiling Fan - Install">
+								  <option value="Drywall - Install">
+								  <option value="Wallcovering or Wallpaper - Install">
+								  <option value="Acoustic Ceiling Tiles - Install">
+								  <option value="Baseboards - Install or Replace">
+								  <option value="Brick, Stone or Block Wall - Install">
+								  <option value="Closet - Build">
+								  <option value="Window Trim - Install or Replace">
+								  <option value="Finish carpenters install trim & molding">
+								  <option value="Wood Paneling - Install or Repair">
+								  <option value="Windows & Doors">
+
+
+
+								</datalist>
+
+
+
+
+
+				        </div>
+				       
+
+
+				       <div class="">
+
+					        <div class="form-group">
+					          <label for="description">Description</label>
+					          <input type="textarea" class="form-control" name="description" placeholder="Description" [(ngModel)]="projectForm.description">
+					        </div>
+
+						</div>
+
+
+
+				       <div class="input-line">
+
+
+					        <div class="form-group">
+					          <label for="email">Email Address</label>
+					          <input type="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="projectForm.email">
+					        </div>
+					        <div class="form-group">
+					          <label for="phoneNumber">Phone Number</label>
+					          <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone" [(ngModel)]="projectForm.phoneNumber">
+					        </div>
+					        <div class="form-group">
+	     						<label for="name">Full Name</label>
+					          <input type="text" class="form-control" name="name" placeholder="Name" [(ngModel)]="projectForm.name">
+					        </div>
+
+
+				   	   </div>
+
+
+
+				       <div class="input-line">
+
+
+					        <div class="street-input form-group ">
+					          <label for="street">Street</label>
+					          <input type="text" class="form-control" name="street" placeholder="Street" [(ngModel)]="projectForm.street">
+					        </div>
+					        <div class="form-group">
+					          <label for="city">City</label>
+					          <input type="text" class="form-control" name="phoneNumber" placeholder="City" [(ngModel)]="projectForm.city">
+					        </div>
+					        <div class="form-group">
+	     						<label for="state">State</label>
+					          <input type="text" class="form-control" name="name" placeholder="State" [(ngModel)]="projectForm.state">
+					        </div>
+					        <div class="form-group">
+	     						<label for="zip">Zip</label>
+					          <input type="text" class="form-control" name="name" placeholder="Zip" [(ngModel)]="projectForm.zip">
+					        </div>
+
+				    	</div>
+
+
+
+				    <div class="submit-line">
+				    	<button type="submit" class="btn btn-default input-submit">Get My Quote</button>
+					</div>	
+
+				  	</form>
+			</div>
+		</div>
+		
+
+
+	</div>
+
+
+
+	<div class="aboutUs-header">
+		<div class="aboutUs-content">
+			<h1 class="text-center">Why Choose Us</h1>
+
+
+			<div class="text-header">
+				<p class="text-center">Unlimited Home Improvements and Landscaping is a New York based construction company. Our friendly team of professionals know what is the best fit for our customers requests. We are from New York and are here to build, repair and achieve a better and safer living space for our neighbors. We provide our clients with the answers to their questions. We make sure you will have the best customer service possible.</p>
+			</div>
+
+
+			<div class="row circles">
+				<h4 class="text-center text-header">Our Company's Core </h4>
+				<div class="col-md-3">
+					<div class="circle honest-circle"></div>
+					<h4 class="text-center">Honest</h4>
+				</div>
+				<div class="col-md-3">
+					<div class="circle ethical-circle"></div>
+					<h4 class="text-center">Ethical</h4>
+				</div>
+				<div class="col-md-3">
+					<div class="circle licensed-circle"></div>
+					<h4 class="text-center">Licensed</h4>
+				</div>
+				<div class="col-md-3">
+					<div class="circle quality-circle"></div>
+					<h4 class="text-center">Quality Work</h4>
+				</div>
+
+			</div>
+
+
+			<div class="text-quote">
+				<p class="quote-first text-center">"We excel with clients wanting to add value to their homes, and clients who want to live or work in high quality workmanship."</p>
+				<p class="quote-name text-center"> -Sarah Jacobi, Unlimited Home Improvements Founder </p>
+			</div>
+
+			<div class="texts">
+				<div class="col-md-6 text-left">
+					<p class="text">We are a locally owned and operated company that values honesty and integrity, and treats your 	home as if it were our own. We offer a variety of services that are customizable to each individual project. We specialize in bathroom and kitchen remodeling projects. We pride ourselves on the quality of our work, as well as our commitment to outstanding results. We look forward to building lasting relationships with our clients, and we guarantee your satisfaction. Electrical is our specialty. We also offer 100% financing options through a third party for all services offered after current credit and equity are considered.</p>	`
+				</div>
+
+
+				<div class="col-md-6 text-right">
+					<p class="text">Our experienced and professional operating team, sales team and construction teams have always provided our clients with excellent work. Every project is treated like it is our primary project. From the start of the project, there will be explanations to any questions and guides as to how the project will be completed.</p>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<div class="services">
+		<div class="services-content">
+			<h1 class="text-center">What We Offer</h1>
+
+
+			<div class="row squares">
+				<div class="col-md-4">
+					<div class="square"><img src="https://static.thenounproject.com/png/1306672-200.png"></div>
+					
+					<h4 class="text-center">Small and Full Renovations</h4>
+				</div>
+				<div class="col-md-4">
+					<div class="square"><img src="https://static.thenounproject.com/png/237310-200.png"></div>
+					
+					<h4 class="text-center">Construction</h4>
+				</div>
+				<div class="col-md-4">
+					<div class="square"><img src="https://static.thenounproject.com/png/89557-200.png"></div>
+
+					<h4 class="text-center">Apply for Financing</h4>
+				</div>
+			</div>
+
+
+			<div class="category-list">
+
+
+
+				<div class="col-md-6 cat-left">
+					<ul>
+						<li>Additions & Remodeling</li>
+						<li>Bathrooms</li>
+						<li>Cabinets</li>
+						<li>Countertops</li>
+						<li>Ceilings</li>
+						<li>Drywall</li>
+						<li>Electrical</li>
+						<li>Flooring</li>
+						<li>Furniture</li>
+						<li>Gas Piping</li>
+						<li>Glass & Mirrors</li>
+					</ul>
+
+				</div>
+
+
+				<div class="col-md-6 cat-right">
+					<ul>
+						<li>Hot Tubs & Spas</li>
+						<li>Kitchen</li>
+						<li>Major Renovations</li>
+						<li>Painting & Staining</li>
+						<li>Plumbing</li>
+						<li>Solar Water Heater System</li>
+						<li>Sprinkler Systems</li>
+						<li>Trim & Moldings</li>
+						<li>Windows & Doors</li>
+						<li>Wood Paneling</li>
+						<li>And So Much More!</li>
+					</ul>
+				</div>
+
+	
+
+				
+
+			</div>
+
+
+			<div class="started">
+				<button>Get Started</button>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+</div>
