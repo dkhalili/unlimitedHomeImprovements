@@ -19,6 +19,14 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 $(document).ready(function() { 
 
+
+	$('.homeLink').click(function(){
+	$('html,body').animate({
+        scrollTop: $(".home-header").offset().top},
+        'slow');
+	})
+
+
 	$('.aboutUsLink').click(function(){
 	$('html,body').animate({
         scrollTop: $(".aboutUs-header").offset().top},
