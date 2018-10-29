@@ -33,5 +33,11 @@ export class ProfileComponent {
       }, (err) => {
         console.error(err);
       });
+
+    this.proj.getProjects().subscribe(projects => {
+      this.projects = projects;
+    }, (err) => {
+      console.error(err);
+    });
   }
 }
