@@ -30,7 +30,6 @@ export class ProfileComponent {
 
   projectDelete(_id) {
     this.proj.projectDelete(_id).subscribe(projects => {
-          location.reload();
       }, (err) => {
         console.error(err);
       });

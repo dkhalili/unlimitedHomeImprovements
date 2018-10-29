@@ -45,9 +45,10 @@ module.exports.projectCreate = function(req, res) {
   project.city = req.body.city;
   project.state = req.body.state;
   project.zip = req.body.zip;
-  var date = new Date();
-  var dateString = date.getMonth()  + '/' + date.getDay() + '/' + date.getFullYear();
-  project.date = dateString;
+  var date = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+  // var date = new Date();
+  // var dateString = date.getMonth()  + '/' + date.getDay() + '/' + date.getFullYear();
+  project.date = date;
 
 
   project.save(function(err) {

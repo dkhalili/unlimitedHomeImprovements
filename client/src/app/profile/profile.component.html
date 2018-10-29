@@ -41,7 +41,7 @@
 
 
 
-    
+
 
       <div class="form-horizontal projectDetails" *ngFor="let project of projects?.reverse()">
 
@@ -53,43 +53,44 @@
 
 
 
-               <div class="text-center">
+               <div class="text-data">
                              
-                  <label class="text-center">What Type of Contractor are you Looking for?</label>
-                  <p class="text-center">{{ project?.projectCategory }}</p>
+                  <label class="text-title">What Type of Contractor are you Looking for?</label>
+                  <label class="text-content">{{ project?.projectCategory }}</label>
 
                </div>
 
 
-               <div class="text-center">
+               <div class="text-data">
 
-                    <label class="text-center" for="description">Description</label>
-                  <p class="text-center">{{ project?.description }}</p>
+                  <label class="text-title" for="description">Description</label>
+                  <label class="text-content">{{ project?.description }}</label>
 
               </div>
 
 
-                <div class="text-center">
-                  <label class="text-center" for="email">Email Address</label>
-                  <p class="text-center">{{ project?.email }}</p>
+                <div class="text-data">
+                  <label class="text-title" for="email">Email Address</label>
+                  <label class="text-content">{{ project?.email }}</label>
                 </div>
 
 
-                <div class="text-center">
-                  <label class="text-center" for="phoneNumber">Phone Number</label>
-                  <p class="text-center">{{ project?.phoneNumber }}</p>
+                <div class="text-data">
+                  <label class="text-title" for="phoneNumber">Phone Number</label>
+                  <label class="text-content">{{ project?.phoneNumber }}</label>
 
                 </div>
 
 
-                <div class="text-center">
-                  <label class="text-center" for="name">Full Name</label>
-                  <p class="text-center">{{ project?.name }}</p>
+                <div class="text-data">
+                  <label class="text-title" for="name">Full Name</label>
+                  <label class="text-content">{{ project?.name }}</label>
                 </div>
-                <div class="text-center">
-                  <label class="text-center" for="Address">Address</label>
-                  <p class="text-center">{{ project?.street }}</p>
-                  <p class="text-center">{{ project?.city }} {{ project?.state }} {{ project?.zip }}</p>
+
+                <div class="text-data">
+                  <label class="text-title" for="Address">Address</label>
+                  <label class="text-content">{{ project?.street }}</label>
+                  <label class="text-content">{{ project?.city }} {{ project?.state }} {{ project?.zip }}</label>
                 </div>
 
 <div class="projectDelete">
