@@ -358,7 +358,14 @@ footer .footer-par {
 footer a {
 	color: black;
 }
-
+footer .flex-center {
+	text-align: center;
+	margin-bottom: 30px;
+}
+footer .flex-center a {
+	text-align: center;
+	margin:25px;
+}
 
 .tymodal {
 	display: none;

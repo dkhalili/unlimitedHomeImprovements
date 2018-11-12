@@ -10,7 +10,7 @@
         <li><a class="requestLink" routerLink="/">Request</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li *ngIf="!auth.isLoggedIn()"><a routerLink="/login">Sign in</a></li>
+        <li *ngIf="!auth.isLoggedIn()"><a routerLink="/login">Sign In</a></li>
         <li *ngIf="auth.isLoggedIn()"><a routerLink="/profile">{{ auth.getUserDetails()?.name }}</a></li>
         <li *ngIf="auth.isLoggedIn()"><a (click)="auth.logout()" href="#">Logout</a></li>
       </ul>
@@ -72,7 +72,7 @@
                 <p>Sara - Sharok Yacobi</p>
               </li>
               <li>
-                <p>(516)355-8229</p>
+                <p>(516)564-2999</p>
               </li>
               <li>
                 <p>sharok@unlimitedhomeimprovements.com</p>
@@ -88,8 +88,55 @@
 
     </div>
 
+
+
+<div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic" href="https://www.facebook.com/GreatPricing/" target="_blank">
+              <img src="https://image.flaticon.com/icons/png/512/69/69407.png" height= "50px">
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic" href="https://www.yelp.com/biz/unlimited-home-improvements-great-neck" target="_blank">
+              <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/styleguide/e28eaa04bad1/assets/img/brand_guidelines/old_no_stroke.png" height= "50px">
+
+            </a>
+            
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+
+
+
+
+
+
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
       <a href="">UnlimitedHomeImprovements.com</a>
     </div>
 
   </footer>
+
+
+
+
+
+
+    
+
+
+
+
+
