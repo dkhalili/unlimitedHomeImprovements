@@ -18,11 +18,7 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: black;
-}
-.navbar-default .navbar-nav>li>a {
     color: black;
-    font-family: monospace;
 }
 
 
@@ -255,9 +251,9 @@ background-image: url(https://www.pymnts.com/wp-content/uploads/2018/05/construc
 
 
 .services {
-	padding-top: 75px;
+	padding-top: 200px;
 
-	background-image: url(http://www.hillwoodproducts.com/wp-content/uploads/2015/03/wood1.jpg);
+	background-image: url(/assets/WoodBurn.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -269,6 +265,11 @@ background-image: url(https://www.pymnts.com/wp-content/uploads/2018/05/construc
 
 .services h4 {
 	font-size: 24px;
+}
+
+.services-content {
+	    margin-top: 200px;
+
 }
 .services-content h1 {
 	color: black;
@@ -365,6 +366,10 @@ footer .flex-center {
 footer .flex-center a {
 	text-align: center;
 	margin:25px;
+}
+
+.footer-nav li {
+	margin-bottom: 10px;
 }
 
 .tymodal {
