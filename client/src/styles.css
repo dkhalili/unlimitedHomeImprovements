@@ -157,8 +157,13 @@ background-image: url(https://www.pymnts.com/wp-content/uploads/2018/05/construc
 	color: black;
     margin-top: 0;
     font-size: 50px;
-    padding-bottom: 25px;
 }
+
+.videoHeader {
+	text-align:center;
+}
+
+
 .aboutUs-header .text-header {
     padding: 25px 75px;
 }
